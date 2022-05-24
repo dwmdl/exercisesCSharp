@@ -13,7 +13,3 @@ C:\Users\proph3tum\Documents\csProject\Book\Rider\FirstProjects\ProjConsole\obj\
 C:\Users\proph3tum\Documents\csProject\Book\Rider\FirstProjects\ProjConsole\obj\Debug\net6.0\ProjConsole.pdb
 C:\Users\proph3tum\Documents\csProject\Book\Rider\FirstProjects\ProjConsole\obj\Debug\net6.0\ProjConsole.genruntimeconfig.cache
 C:\Users\proph3tum\Documents\csProject\Book\Rider\FirstProjects\ProjConsole\obj\Debug\net6.0\ref\ProjConsole.dll
-C:\Users\proph3tum\Documents\csProject\Book\Rider\FirstProjects\ProjConsole\bin\Debug\net6.0\WindowsFormsApp1.exe
-C:\Users\proph3tum\Documents\csProject\Book\Rider\FirstProjects\ProjConsole\bin\Debug\net6.0\WindowsFormsApp1.pdb
-C:\Users\proph3tum\Documents\csProject\Book\Rider\FirstProjects\ProjConsole\bin\Debug\net6.0\WindowsFormsApp1.exe.config
-C:\Users\proph3tum\Documents\csProject\Book\Rider\FirstProjects\ProjConsole\obj\Debug\net6.0\ProjConsole.csproj.CopyComplete
