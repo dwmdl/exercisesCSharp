@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjConsole", "ProjConsole\ProjConsole.csproj", "{A643A27F-69F9-4223-9C11-8CAF2FC575A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjForms", "ProjForms\ProjForms.csproj", "{DA7FFA8A-AF70-43D5-8A1F-AF6FDFE86AB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A643A27F-69F9-4223-9C11-8CAF2FC575A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A643A27F-69F9-4223-9C11-8CAF2FC575A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A643A27F-69F9-4223-9C11-8CAF2FC575A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A643A27F-69F9-4223-9C11-8CAF2FC575A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA7FFA8A-AF70-43D5-8A1F-AF6FDFE86AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA7FFA8A-AF70-43D5-8A1F-AF6FDFE86AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA7FFA8A-AF70-43D5-8A1F-AF6FDFE86AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA7FFA8A-AF70-43D5-8A1F-AF6FDFE86AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
