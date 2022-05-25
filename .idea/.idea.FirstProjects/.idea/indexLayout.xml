@@ -5,6 +5,7 @@
     <explicitIncludes />
     <explicitExcludes>
       <Path>ProjConsole/InputConsoleDemo.cs</Path>
+      <Path>ProjConsole/main.cs</Path>
     </explicitExcludes>
   </component>
 </project>
