@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjForms", "ProjForms\Proj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjConsole", "ProjConsole\ProjConsole.csproj", "{CDA40DDF-D2FB-4803-A31B-C25D46701BF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchGame", "MatchGame\MatchGame.csproj", "{56C0D0CB-E97B-4FDB-906A-010E83AE0714}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{CDA40DDF-D2FB-4803-A31B-C25D46701BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDA40DDF-D2FB-4803-A31B-C25D46701BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDA40DDF-D2FB-4803-A31B-C25D46701BF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C0D0CB-E97B-4FDB-906A-010E83AE0714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C0D0CB-E97B-4FDB-906A-010E83AE0714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C0D0CB-E97B-4FDB-906A-010E83AE0714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C0D0CB-E97B-4FDB-906A-010E83AE0714}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
