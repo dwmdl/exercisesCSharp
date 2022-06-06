@@ -1,18 +1,35 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 using Microsoft.VisualBasic;
 
 namespace ProjForms
 {
-	static class OutputForm
+	static class UsingIfDemo
 	{
 		static void Main()
 		{
-			int firstNumber = Int32.Parse(Interaction.InputBox("Enter the first number", "Sum and Difference"));
-			int secondNumber = Int32.Parse(Interaction.InputBox("Enter the second number", "Sum and Difference"));
-			int sum = firstNumber + secondNumber;
-			int difference = firstNumber - secondNumber;
-			MessageBox.Show($@"The sum of numbers : {sum}. The difference of numbers : {difference}");
+			// переменная для определения типа пиктограммы
+			MessageBoxIcon icon;
+			string msg, title;
+			// переменные для определения текста сообщения, заголовка окна и имени пользователя
+			string name = Interaction.InputBox("What is your name?", "Getting Acquainted");
+
+			// условный оператор : проверка введенного пользователем текста
+			if (name == "") // если текст не введен
+			{
+				// пиктограмма ошибки
+				icon = MessageBoxIcon.Error;
+				msg = "It's a pity that we didn't get to know each other";
+				title = "The acquaintance did not take place";
+			}
+			else // если текст введен
+			{
+				// информационная пиктограмма
+				icon = MessageBoxIcon.Information;
+				msg = $"Nice to meet you, {name}!";
+				title = "The acquaintance took place";
+			}
+
+			MessageBox.Show(msg, title, MessageBoxButtons.OK, icon);
 		}
 	}
-}	
+}

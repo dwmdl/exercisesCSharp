@@ -4,7 +4,7 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{EEF8CBD7-A0BE-4289-985B-283DE5F1DCF7}</ProjectGuid>
+        <ProjectGuid>{B7485D19-68A4-4E95-8607-25C2701A2CF1}</ProjectGuid>
         <OutputType>WinExe</OutputType>
         <RootNamespace>ProjForms</RootNamespace>
         <AssemblyName>ProjForms</AssemblyName>
@@ -36,6 +36,7 @@
         <Reference Include="Microsoft.VisualBasic" />
         <Reference Include="System" />
         <Reference Include="System.Core" />
+        <Reference Include="System.Windows.Forms" />
         <Reference Include="System.Xml.Linq" />
         <Reference Include="System.Data.DataSetExtensions" />
         <Reference Include="Microsoft.CSharp" />
@@ -43,7 +44,6 @@
         <Reference Include="System.Deployment" />
         <Reference Include="System.Drawing" />
         <Reference Include="System.Net.Http" />
-        <Reference Include="System.Windows.Forms" />
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
