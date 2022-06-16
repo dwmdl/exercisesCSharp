@@ -1,24 +1,25 @@
-﻿namespace ProjConsole;
-
-/*
- * 
+﻿/*
+ * Этапы :
+ * 1. Запросить у пользователя сумму вклада и кол-во месяцев
+ * 2. Прибавить 7% к вкладу за каждый месяц. Необходимо реализовать с оператором цикла for
+ * 3. Вывести на экран сумму накопленную за все месяцы
  */
 
-static class OutputConsole
+namespace ProjConsole;
+
+static class BankDeposit
 {
 	static void Main()
 	{
-		// Console.WriteLine("Enter any first number");
-		// int firstNumber = Int32.Parse(Console.ReadLine()!);
-		// Console.WriteLine("Enter any second number");
-		// int secondNumber = Int32.Parse(Console.ReadLine()!);
-		// int sum = firstNumber + secondNumber;
-		// int difference = firstNumber - secondNumber;
-		// Console.WriteLine($"Sum of numbers : {sum}");
-		// Console.WriteLine($"The difference of numbers : {difference}"); ; ;
+		Console.Write("Enter the deposit amount : ");
+		decimal deposit = Convert.ToDecimal(Console.ReadLine());
+		Console.Write("Enter the number of months for the deposit : ");
+		int months = Convert.ToInt32(Console.ReadLine());
 
-		int A = 10, B;
-		B = A--;
-		Console.WriteLine(A);
+		for (int i = 1; i <= months; i++)
+		{
+			deposit += deposit * 0.07M;
+		}
+		Console.WriteLine($"Спустя {months} месяцев, сумма вклада составит {deposit}");
 	}
 }
