@@ -1,35 +1,19 @@
-﻿using System.Windows.Forms;
+﻿/*
+ * Вычисляется сумма нечетных чисел
+ * Для проверки можно воспользоваться 2+4+6+...+2n = n(n+1)
+ * Необходимо предложить версии программы, которые используют разные циклы
+ */
+
+using System;
+using System.Windows.Forms;
 using Microsoft.VisualBasic;
 
 namespace ProjForms
 {
-	static class UsingIfDemo
+	static class DayOfTheWeek
 	{
-		static void Main()
+		private static void Main()
 		{
-			// переменная для определения типа пиктограммы
-			MessageBoxIcon icon;
-			string msg, title;
-			// переменные для определения текста сообщения, заголовка окна и имени пользователя
-			string name = Interaction.InputBox("What is your name?", "Getting Acquainted");
-
-			// условный оператор : проверка введенного пользователем текста
-			if (name == "") // если текст не введен
-			{
-				// пиктограмма ошибки
-				icon = MessageBoxIcon.Error;
-				msg = "It's a pity that we didn't get to know each other";
-				title = "The acquaintance did not take place";
-			}
-			else // если текст введен
-			{
-				// информационная пиктограмма
-				icon = MessageBoxIcon.Information;
-				msg = $"Nice to meet you, {name}!";
-				title = "The acquaintance took place";
-			}
-
-			MessageBox.Show(msg, title, MessageBoxButtons.OK, icon);
 		}
 	}
 }

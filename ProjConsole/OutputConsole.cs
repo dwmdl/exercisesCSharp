@@ -1,25 +1,63 @@
-﻿/*
- * Этапы :
- * 1. Запросить у пользователя сумму вклада и кол-во месяцев
- * 2. Прибавить 7% к вкладу за каждый месяц. Необходимо реализовать с оператором цикла for
- * 3. Вывести на экран сумму накопленную за все месяцы
+﻿/* DESCRIPTION:
+ * Написать программу, в которой вычисляется сумма чисел
+ * Числа должны удовлетворять следующим критериям : При делении числа на 5 - в остатке 2, при делении на 3 - в остатке 1
+ * Кол-во чисел в сумме вводиться пользователем
+ * Программа отображает числа, которые суммируются, и значение суммы
+ * Необходимо использовать обработку исключений
+ * Предложить версии программ с разными операторами цикла
  */
+
+/* STEPS:
+ * 1. Запросить у пользователя кол-во чисел в сумме
+ * 2. Написать проверку для введенных чисел. Можно попробовать реализовать тернарный оператор.
+ *	UPD:: Все это необходимо написать внутри оператора цикла
+ * 3. Программа отображает число, которое суммируется (которое прошло проверку) и значение суммы
+ * 4. Реализовать обработку исключений
+ */
+
 
 namespace ProjConsole;
 
-static class BankDeposit
+static class SumCondition
 {
 	static void Main()
 	{
-		Console.Write("Enter the deposit amount : ");
-		decimal deposit = Convert.ToDecimal(Console.ReadLine());
-		Console.Write("Enter the number of months for the deposit : ");
-		int months = Convert.ToInt32(Console.ReadLine());
-
-		for (int i = 1; i <= months; i++)
+		try
 		{
-			deposit += deposit * 0.07M;
+			int userNumber, sum = 0;
+
+			// use any suitable loop
+			do
+			{
+				// STEPS: 1
+				Console.WriteLine("Enter a any integer \nOr enter 0 to end the program");
+				userNumber = Int32.Parse(Console.ReadLine()!);
+
+				// STEPS: 2 ; ternary operator
+				string yesNo = userNumber % 5 == 2 || userNumber % 3 == 1
+					? $"{sum} + {userNumber} = {sum += userNumber}"
+					: "The number does not match the condition. It has not been added to the total.\n";
+
+				// STEPS: 2.1 ; if operator
+				/*
+				if (userNumber % 5 == 2 || userNumber % 3 == 1)
+				{
+					Console.Write($"The number {userNumber} satisfies the conditions and is added to the total." +
+					              $"\nSum of numbers equals : {sum} + {userNumber} = {sum += userNumber}\n");
+				}
+				else Console.WriteLine("The number does not match the condition. It has not been added to the total.\n");
+				*/
+
+				// STEPS: 3
+				Console.WriteLine($"{yesNo}");
+			} while (userNumber != 0);
+
+			Console.WriteLine("Program has been ended.");
 		}
-		Console.WriteLine($"Спустя {months} месяцев, сумма вклада составит {deposit}");
+		catch
+		{
+			// STEPS: 4
+			Console.WriteLine("You entered isn't a number. Program will be end");
+		}
 	}
 }
