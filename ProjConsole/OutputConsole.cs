@@ -1,42 +1,35 @@
-﻿/* DESCRIPTION:
- * 
+﻿/*
+ * Создать массив.
+ * Заполнить массив случайными значениями
+ * Отсортировать массив в порядке убывания значений
  */
 
-/* STEPS:
- * 1.  
- */
 
 namespace ProjConsole;
 
-internal static class BubbleSortArrayDemo
+internal static class BubbleSortAscending
 {
 	private static void Main()
 	{
-		// symbol variable
-		char s;
+		var rnd = new Random();
+		var array = new int[rnd.Next(1, 29)];
 
-		// initial symbol array
-		char[] symbols = { 'Q', 'Ы', 'a', 'B', 'R', 'A', 'r', 'q', 'b' };
-
-		// displaying array
 		Console.WriteLine("Array before sorting :");
-		for (var i = 0; i < symbols.Length; i++) Console.WriteLine(symbols[i]);
-
-		// sorting elements in the array
-		for (var i = 1; i < symbols.Length; i++)
+		for (var i = 0; i < array.Length; i++)
 		{
-			// iterating through the elements
-			for (int j = 0; j < symbols.Length; j++)
-			{
-				if (symbols[j] <= symbols[j + 1]) continue;
-				s = symbols[j + 1];
-				symbols[j + 1] = symbols[j];
-				symbols[j] = s;
-			}
+			array[i] = rnd.Next(0, 260);
+			Console.Write($"{array[i]}, ");
 		}
 
-		// displaying the contents of the array
-		Console.WriteLine("Array after sorting");
-		for (int i = 0; i < symbols.Length; i++) Console.WriteLine(symbols[i]);
+		// ALGORITHM OF BUBBLE SORT
+		for (var i = 1; i < array.Length; i++)
+		for (var j = 0; j < array.Length - i; j++)
+		{
+			if (array[j] >= array[j + 1]) continue;
+			(array[j + 1], array[j]) = (array[j], array[j + 1]);
+		}
+
+		Console.WriteLine("\nArray after sorting : ");
+		foreach (int t in array) Console.Write($"{t}, ");
 	}
 }
