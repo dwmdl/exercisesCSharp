@@ -10,13 +10,12 @@ internal static class BubbleSortAscending
 {  
    private static void Main()  
    {      
-			var rnd = new Random();			  
+	  var rnd = new Random();  
       var array = new int[rnd.Next(1, 29)];  
   
       Console.WriteLine("Array before sorting :");  
       for (var i = 0; i < array.Length; i++)  
-      {         
-				 array[i] = rnd.Next(0, 260);  
+      {         array[i] = rnd.Next(0, 260);  
          Console.Write($"{array[i]}, ");  
       }  
   
