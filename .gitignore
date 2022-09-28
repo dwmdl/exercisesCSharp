@@ -1,12 +1,3 @@
 ﻿/.idea/
-/ProjConsole/bin
-/ProjConsole/obj
-/ProjForms/Properties
-/ProjForms/obj
-/ProjForms/bin
-/MatchGame/bin
-/MatchGame/obj
-/MatchGame/Properties
-/MatchGame/App.Config
-/ProjForms/
+/ProjConsole/
 /ProjConsole/ProjConsole.csproj
