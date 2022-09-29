@@ -2,9 +2,9 @@
 
 namespace LeetCodeSolution;
 
-public class Solution
+public partial class Solution
 {
-	public int[] TwoSum(int[] nums, int target)
+	public static int[] TwoSum(int[] nums, int target)
 	{
 		for (int i = 0; i < nums.Length; i++)
 		{
