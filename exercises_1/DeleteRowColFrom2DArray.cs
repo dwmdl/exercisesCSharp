@@ -6,7 +6,7 @@
 */
 
 
-namespace ProjConsole;
+namespace exercisesCSharp.exercises_1;
 
 internal static class DeleteRowAndColFrom2DArray
 {

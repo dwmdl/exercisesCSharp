@@ -12,7 +12,7 @@
  * n / 2, because full turns of the matrix will turn out to be two times less than the dimension itself
  */
 
-namespace ProjConsole;
+namespace exercisesCSharp.exercises_1;
 
 public static class SpiralAlgorithm
 {

@@ -7,7 +7,7 @@
 // Например, если массив состоял из 3стр и 5стлбц, то в итоге получим массив из 5стр и 3стлбц
 
 
-namespace ProjConsole;
+namespace exercisesCSharp.exercises_1;
 
 internal static class TwoDimensionalReverseArray
 {

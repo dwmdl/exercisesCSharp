@@ -4,7 +4,7 @@
  * Отсортировать массив в порядке убывания значений 
  */
 
-namespace ProjConsole;
+namespace exercisesCSharp.exercises_1;
 
 internal static class BubbleSortAscending
 {
