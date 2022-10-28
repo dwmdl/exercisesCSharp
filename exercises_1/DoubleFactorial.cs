@@ -4,14 +4,14 @@
 
 internal static class DoubleFactorial
 {
-    // used recursive method
+    // recursive method
     private static int DoubleFactorialRecursive(int n)
     {
         if (n <= 1) return 1;
         return n * DoubleFactorialRecursive(n - 2);
     }
 
-    // method without recursive
+    // method without recursion
     private static int DoubleFactorialWithoutRecursive(int n)
     {
         var result = n;
