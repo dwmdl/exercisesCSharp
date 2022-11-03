@@ -1,10 +1,10 @@
-﻿namespace exercisesCSharp.exercises_easy;
+﻿namespace exercisesCSharp.easy;
 
 public class CharArrayTransform
 {
     // TODO-ENG: Write a program with a static method, the argument to which is a character array, and the result is a reference to an integer array, consisting of the character codes of the argument array (on 10/31/2022, 7:11pm)
     
-    // TODO-RU: Напишите программу со статическим методом, аргументом которого является массив символов, а результатом является ссылка на целочисленный массив, состоящий из кодов символов массива аргументов.
+    // TODO-RU: Напишите программу со статическим методом, аргументом которого является массив символов, а результатом является ссылка на целочисленный массив, состоящий из кодов символов массива-аргумента.
 
     private static void ArrayTransform(char[] array)
     {
