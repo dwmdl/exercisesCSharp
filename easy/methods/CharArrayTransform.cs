@@ -1,4 +1,4 @@
-﻿namespace exercisesCSharp.easy;
+﻿namespace exercisesCSharp.easy.methods;
 
 public class CharArrayTransform
 {
