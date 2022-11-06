@@ -32,5 +32,3 @@ public class LargestValue2DArray
         Console.WriteLine($"Largest element index: {indexOne}, {indexTwo}");
     }
 }
-
-find the largest value in a two-dimensional array
