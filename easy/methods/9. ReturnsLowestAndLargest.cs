@@ -13,11 +13,12 @@ public class ReturnsLowestAndLargest
         var lowestValue = numbers[0];
 
         // You can also use LINQ expression for finding largest and lowest value
+        // finding a largest value 
         foreach (var t in numbers)
             if (t > largestValue)
                 largestValue = t;
-
-        // finding a lowest value
+        
+        //finding a lowest value
         foreach (var x in numbers)
             if (x < lowestValue)
                 lowestValue = x;
