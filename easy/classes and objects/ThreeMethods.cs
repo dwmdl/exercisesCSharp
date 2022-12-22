@@ -2,7 +2,7 @@
 
 // TODO-en : Write a program with a class that has a private character field and three public methods. One method allows you to assign a value to a field. Another method, when called, returns a character code as a result. The third method allows you to display the symbol (field value) and its code in the console window. (on 12/22/2022, 7:24pm)
 
-namespace exercisesCSharp;
+namespace exercisesCSharp.easy.classes_and_objects;
 
 class MyClass
 {
