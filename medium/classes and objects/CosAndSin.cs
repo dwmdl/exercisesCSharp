@@ -32,7 +32,7 @@ public static class CosAndSin
         double fourthPow = secondPow * secondPow;
 
         var answer = 1 + secondPow / 2 + fourthPow / 24 + secondPow * fourthPow / 720 +
-                        fourthPow * fourthPow / 40320 + secondPow * fourthPow * fourthPow / 3628800;
+                     fourthPow * fourthPow / 40320 + secondPow * fourthPow * fourthPow / 3628800;
 
         return answer;
     }
@@ -43,7 +43,7 @@ public static class CosAndSin
         Console.WriteLine($"Cos(1) : {Cosine(1)}");
         Console.WriteLine($"SinH(2) : {SinusH(2)}");
         Console.WriteLine($"CosH(3) : {CosineH(3)}");
-        
+
         // all this can be calculated using the class Math.Cos/Sin/Cosh/Sinh
         Console.WriteLine(Math.Cos(1));
         Console.WriteLine(Math.Sinh(2));
