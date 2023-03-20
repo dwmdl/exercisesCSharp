@@ -1,4 +1,4 @@
-﻿namespace exercisesCSharp;
+﻿namespace exercisesCSharp.string_manipulation;
 
 public static class StringEquals
 {
