@@ -1,8 +1,10 @@
 # Solutions of different tasks in C# language
-Here I publish a tasks I completed while studying a particular topic
+Here I publish a tasks I completed while studying the C# language
 
-1. The folder names indicate the complexity level of the tasks. I set the complexity of the tasks myself, depending on how long the solution took
-2. After you select a folder with a suitable difficulty, you will be greeted by another folders - the names of the topics to which the tasks in these folders belong 
-3. The name of the file corresponds to what is being executed in it 
-4. In each file, at the very beginning, the task to be performed is described in more detail.
-5. You can only read the description and try to solve it
+1. The name of the folder indicates the topic to which the tasks in it belong. 
+2. The file name partially describes the task (I tried to choose the right ones)
+3. A description of the task to be performed can be found in the commit messages. 
+   1. If the file contains multiple commits, then the description should be in the very first
+4. Finally, each file is my own solution to the task
+
+If you really find these problems interesting, my advice to you is to try to solve everything yourself. All of these tasks are suitable for beginners.
