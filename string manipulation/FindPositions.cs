@@ -1,6 +1,6 @@
 ﻿namespace exercisesCSharp.string_manipulation;
 
-public static class Entity
+public static class FindPositions
 {
 	// This method takes a string and a character as parameters and returns an array of integers
 	private static int[] FindSymbol(string text, char c)
