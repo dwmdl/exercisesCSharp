@@ -1,40 +1,32 @@
-﻿// Написать программу со статическим методом, определяющим позиции, на которых в тексте находится определенный символ. Аргументами методу передаются текст и символ. Результатом метод возвращает целочисленный массив, значения элементов которого - это индексы позиций, на которых символ находится в тексте. Если символ в тексте не встречается, метод возвращает массив из одного элемента, значения которого равно -1. 
-
-namespace exercisesCSharp.string_manipulation;
+﻿namespace exercisesCSharp.string_manipulation;
 
 public static class Entity
 {
-	private static int[] FindSymbol(string text, char s)
+	// This method takes a string and a character as parameters and returns an array of integers
+	private static int[] FindSymbol(string text, char c)
 	{
-		var temp = "";
+		// Create a list to store the positions of the character in the string
+		var positions = new List<int>();
 
+		// Loop through each character in the string
 		for (var i = 0; i < text.Length; i++)
-			if (text[i] == s)
-				temp += $"{i}";
+			if (text[i] == c)
+				positions.Add(i);
 
-		int[] indexes;
-		
-		if (temp.Length > 0)
-		{
-			indexes = new int [temp.Length];
-			for (var i = 0; i < temp.Length; i++) indexes[i] = temp[i];
-		}
-		else
-			indexes = new int[1];
-
-		return indexes;
+		// If only one position was found, add -1 to the list
+		if (positions.Count == 0) positions.Add(-1);
+		return positions.ToArray();
 	}
 
 	private static void Main()
 	{
-		const string text = "RimWorld";
-		Console.WriteLine("What character do you want to find in the text?");
-		var s = Convert.ToChar(Console.ReadLine()!);
+		var text = "RimWorld";
+		Console.WriteLine("What character do you want to find?");
+		var c = Convert.ToChar(Console.ReadLine()!);
 
-		Console.Write("Indexes where the search symbol occurs: ");
-		foreach (var t in FindSymbol(text.ToLower(), s))
-		{
-			Console.Write(t);
-		}
+		int[] positions = FindSymbol(text.ToLower(), c);
+		Console.WriteLine(positions is [-1]
+			? $"The character '{c}' wasn't found in the text: {positions[0]}"
+			: $"The character '{c}' was found at positions: {String.Join(", ", positions)}");
 	}
 }
