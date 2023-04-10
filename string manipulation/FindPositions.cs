@@ -20,7 +20,7 @@ public static class FindPositions
 
 	private static void Main()
 	{
-		var text = "RimWorld";
+		const string text = "RimWorld";
 		Console.WriteLine("What character do you want to find?");
 		var c = Convert.ToChar(Console.ReadLine()!);
 
